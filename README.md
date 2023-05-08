@@ -30,24 +30,7 @@ The program is developed in accordance with the REST concept using such technolo
 
 ## Structure
 <H3>Packages:</H3>
-- `controller` - contains controllers for endpoints with different access depending on the role
-    - `POST: /register` - register new user - `ALL`
-    - `POST: /movies` - to create a movie - `ADMIN`
-    - `GET: /movies` - to get all movies - `ADMIN` and `USER`
-    - `POST: /cinema-halls` - to create cinema hall - `ADMIN`
-    - `GET: /cinema-halls` - to get all cinema halls - `ADMIN` and `USER`
-    - `POST: /movie-sessions` - to create movie session - `ADMIN`
-    - `PUT: /movie-sessions/{id}` - to update a movie session - `ADMIN`
-    - `DELETE: /movie-sessions/{id}` - to delete movie session - `ADMIN`  
-    - `GET: /movie-sessions/available` - to get all available movie sessions by movieId and date - `ADMIN` and `USER`
-    - `GET: /users/by-email` - to find user by email - `ADMIN`
-    - `PUT: /shopping-carts/movie-sessions` - to add movie session to shopping cart - `USER`
-    - `GET: /shopping-carts/by-user` - to get shopping cart by user - `USER`
-    - `GET: /orders` - to get order history by current user - `USER`
-    - `POST: /orders/complete` - to create order for current user - `USER`
-    
-You can use my POSTMAN request collection for testing - [Postman collection](https://www.postman.com/spaceflight-geoscientist-28091609/workspace/cinema-app/collection/27140793-691a19ab-e254-4069-b641-808906a29bf5?action=share&creator=27140793)
-    
+- `controller` - contains controllers for endpoints with different access depending on the role    
 - `config` - stores Spring and App configuration
 - `dao` - data access layer (repository) with CRUD methods in the database
 - `dto` - wrapper for model objects to unify the requests and responses in controllers
@@ -60,7 +43,27 @@ You can use my POSTMAN request collection for testing - [Postman collection](htt
 - `resources` - contains properties for database
 
 
+<H3>Endpoints:</H3>
+- `POST: /register` - register new user - `ALL`
+- `POST: /movies` - to create a movie - `ADMIN`
+- `GET: /movies` - to get all movies - `ADMIN` and `USER`
+- `POST: /cinema-halls` - to create cinema hall - `ADMIN`
+- `GET: /cinema-halls` - to get all cinema halls - `ADMIN` and `USER`
+- `POST: /movie-sessions` - to create movie session - `ADMIN`
+- `PUT: /movie-sessions/{id}` - to update a movie session - `ADMIN`
+- `DELETE: /movie-sessions/{id}` - to delete movie session - `ADMIN`  
+- `GET: /movie-sessions/available` - to get all available movie sessions by movieId and date - `ADMIN` and `USER`
+- `GET: /users/by-email` - to find user by email - `ADMIN`
+- `PUT: /shopping-carts/movie-sessions` - to add movie session to shopping cart - `USER`
+- `GET: /shopping-carts/by-user` - to get shopping cart by user - `USER`
+- `GET: /orders` - to get order history by current user - `USER`
+- `POST: /orders/complete` - to create order for current user - `USER`
+    
+You can use my POSTMAN request collection for testing - [Postman collection](https://www.postman.com/spaceflight-geoscientist-28091609/workspace/cinema-app/collection/27140793-691a19ab-e254-4069-b641-808906a29bf5?action=share&creator=27140793)
+
+
 <H3>Model structure and relations</H3>
+
 ![structure.png](structure.png)
 
 
