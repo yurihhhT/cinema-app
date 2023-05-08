@@ -61,6 +61,7 @@ You can use my POSTMAN request collection for testing - [Postman collection](htt
 
 
 <H3>Model structure and relations</H3>
+
 ![structure.png](structure.png)
 
 
