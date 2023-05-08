@@ -29,7 +29,9 @@ The program is developed in accordance with the REST concept using such technolo
 
 
 ## Structure
+
 <H3>Packages:</H3>
+
 - `controller` - contains controllers for endpoints with different access depending on the role    
 - `config` - stores Spring and App configuration
 - `dao` - data access layer (repository) with CRUD methods in the database
@@ -44,6 +46,7 @@ The program is developed in accordance with the REST concept using such technolo
 
 
 <H3>Endpoints:</H3>
+
 - `POST: /register` - register new user - `ALL`
 - `POST: /movies` - to create a movie - `ADMIN`
 - `GET: /movies` - to get all movies - `ADMIN` and `USER`
