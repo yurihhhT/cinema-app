@@ -13,11 +13,11 @@ The program is developed in accordance with the REST concept using such technolo
 - Authentication
 - Authorization by role
     - `ADMIN`
-        * Create and delete movies
-        * Create and delete movie sessions
-        * Create and delete cinema halls
-        * View movies and their description
-        * View movie sessions and in which cinema hall it will take place
+        - Create and delete movies
+        - Create and delete movie sessions
+        - Create and delete cinema halls
+        - View movies and their description
+        - View movie sessions and in which cinema hall it will take place
     - `USER`
         - View movies and their description
         - View available movie sessions and in which cinema hall it will take place
@@ -30,7 +30,7 @@ The program is developed in accordance with the REST concept using such technolo
 
 ## Structure
 <H3>Packages:</H3>
-* `controller` - contains controllers for endpoints with different access depending on the role
+- `controller` - contains controllers for endpoints with different access depending on the role
     - `POST: /register` - register new user - `ALL`
     - `POST: /movies` - to create a movie - `ADMIN`
     - `GET: /movies` - to get all movies - `ADMIN` and `USER`
@@ -48,16 +48,16 @@ The program is developed in accordance with the REST concept using such technolo
     
 You can use my POSTMAN request collection for testing - [Postman collection](https://www.postman.com/spaceflight-geoscientist-28091609/workspace/cinema-app/collection/27140793-691a19ab-e254-4069-b641-808906a29bf5?action=share&creator=27140793)
     
-* `config` - stores Spring and App configuration
-* `dao` - data access layer (repository) with CRUD methods in the database
-* `dto` - wrapper for model objects to unify the requests and responses in controllers
-* `exception` - custom exception class for DAO's exceptions 
-* `lib` - contains email and password validators with its annotations
-* `model` - contains models of entity for the database
-* `service` - contains services that call repositories and perform business logic
-* `mapper` - сonverts model objects into DTO objects and vice versa
-* `util` - utility class used in a project to save DateTime pattern
-* `resources` - contains properties for database
+- `config` - stores Spring and App configuration
+- `dao` - data access layer (repository) with CRUD methods in the database
+- `dto` - wrapper for model objects to unify the requests and responses in controllers
+- `exception` - custom exception class for DAO's exceptions 
+- `lib` - contains email and password validators with its annotations
+- `model` - contains models of entity for the database
+- `service` - contains services that call repositories and perform business logic
+- `mapper` - сonverts model objects into DTO objects and vice versa
+- `util` - utility class used in a project to save DateTime pattern
+- `resources` - contains properties for database
 
 
 <H3>Model structure and relations</H3>
